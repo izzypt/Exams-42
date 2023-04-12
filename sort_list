@@ -30,3 +30,73 @@ int ascending(int a, int b)
 {
 	return (a <= b);
 }
+
+--------------------------------------------------------------------------------
+
+The code implements a function called `sort_list` that takes a linked list (`t_list`) and a function pointer (`cmp`) as parameters. The function uses the bubble sort algorithm to sort the linked list according to the order defined by the function pointer.
+
+Here's a detailed breakdown of the code and the concepts behind it:
+
+```c
+#include "list.h"
+```
+
+This line includes the header file `list.h`, which defines the `t_list` struct and provides function prototypes for working with linked lists.
+
+```c
+t_list	*sort_list(t_list* lst, int (*cmp)(int, int))
+```
+
+This is the function definition for `sort_list`. The function takes a linked list (`t_list`) and a function pointer (`cmp`) as parameters and returns a pointer to the first element of the sorted list.
+
+The `cmp` function pointer is used to determine the order in which the elements should be sorted. The `cmp` function takes two integers as parameters and returns an integer value indicating whether the first parameter should come before or after the second parameter in the sorted list.
+
+```c
+int swapped, i;
+t_list *ptr1;
+t_list *lptr = NULL;
+```
+
+These lines define the variables used in the bubble sort algorithm. `swapped` is used to keep track of whether any elements were swapped in the previous pass through the list. `ptr1` is a pointer to the current element being compared, and `lptr` is a pointer to the last element that was swapped, so that we don't need to compare it again.
+
+```c
+if (lst == NULL)
+    return (NULL);
+```
+
+This code checks if the linked list is empty. If it is, the function returns `NULL`.
+
+```c
+while (swapped)
+{
+    swapped = 0;
+    ptr1 = lst;
+ 
+    while (ptr1->next != lptr)
+    {
+        if (cmp(ptr1->data, ptr1->next->data))
+        {
+            int temp = ptr1->data;
+            ptr1->data = ptr1->next->data;
+            ptr1->next->data = temp;
+            swapped = 1;
+        }
+        ptr1 = ptr1->next;
+    }
+    lptr = ptr1;
+}
+```
+
+This is the main part of the function, which implements the bubble sort algorithm to sort the linked list. The outer `while` loop continues until no elements were swapped in the previous pass through the list.
+
+The inner `while` loop compares adjacent elements in the linked list and swaps them if they are out of order according to the `cmp` function pointer. If any elements were swapped, `swapped` is set to `1`.
+
+After each pass through the list, `lptr` is updated to point to the last element that was swapped, so that we don't need to compare it again in the next pass.
+
+```c
+return (lst);
+```
+
+This line returns a pointer to the first element of the sorted linked list.
+
+I hope this explanation helps you understand the code and the concepts behind it. If you have any further questions, feel free to ask!
