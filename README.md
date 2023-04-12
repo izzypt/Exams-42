@@ -9,6 +9,7 @@ Solved exercises
 
 # Rank 2
 - ft_range
+- pgcd
 
 # Rank 3
 - sort_list
