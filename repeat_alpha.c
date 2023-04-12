@@ -17,6 +17,15 @@ void repeat_alpha(char *str)
                 repeat--;
             }
         }
+        if (*str - 65 > 0 && *str >= 'A' && *str <= 'Z')
+        {
+            repeat = *str - 65;
+            while (repeat)
+            {
+                write(1, str, 1);
+                repeat--;
+            }
+        }
         str++;
     }
 }
