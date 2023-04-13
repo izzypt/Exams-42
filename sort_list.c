@@ -1,33 +1,26 @@
 #include "list.h"
 
-t_list	*sort_list(t_list* lst, int (*cmp)(int, int))
+t_list *sort_list(t_list *lst, int (*cmp)(int, int))
 {
-    int swapped = 1;
-    t_list *ptr1;
-    t_list *lptr = NULL;
- 
-    /* Checking for empty list */
-    if (lst == NULL)
-        return (NULL);
- 
-    while (swapped)
+    t_list *current = lst;
+    int tmp;
+
+    while (current != NULL)
     {
-        swapped = 0;
-        ptr1 = lst;
- 
-        while (ptr1->next != lptr)
+        t_list *next = current->next;
+        while (next != NULL)
         {
-            if (cmp(ptr1->data, ptr1->next->data))
+            if ((*cmp)(current->data, next->data) == 0)
             {
-                int temp = ptr1->data;
-                ptr1->data = ptr1->next->data;
-                ptr1->next->data = temp;
-                swapped = 1;
+                tmp = current->data;
+                current->data = next->data;
+                next->data = tmp;
             }
-            ptr1 = ptr1->next;
+            next = next->next;
         }
-        lptr = ptr1;
+        current = current->next;
     }
-    
-    return (lst);
+
+    return lst;
 }
+
