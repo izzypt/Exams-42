@@ -2,7 +2,7 @@
 Solved exercises
 
 # Rank 0
-- 
+- ft_strcpy
 
 # Rank 1
 - alpha_mirror
