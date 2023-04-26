@@ -11,6 +11,7 @@ Solved exercises
 - is_power_of_2
 - swap_bits
 - ft_strdup
+- inter.c
 
 # Rank 2
 - ft_range
