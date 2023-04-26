@@ -3,6 +3,7 @@ Solved exercises
 
 # Rank 0
 - ft_strcpy
+- first_word
 
 # Rank 1
 - alpha_mirror
