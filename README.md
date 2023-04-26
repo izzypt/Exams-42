@@ -2,6 +2,7 @@
 Solved exercises
 
 # Rank 0
+- ft_swap
 - ft_strcpy
 - first_word
 - search_and_replace
