@@ -9,6 +9,7 @@ Solved exercises
 - alpha_mirror
 - is_power_of_2
 - swap_bits
+- ft_strdup
 
 # Rank 2
 - ft_range
