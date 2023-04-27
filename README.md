@@ -14,6 +14,7 @@ Solved exercises
 - swap_bits
 - ft_strdup
 - inter.c
+- ft_atoi
 
 # Rank 2
 - ft_range
