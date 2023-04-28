@@ -6,7 +6,7 @@
 /*   By: simao <simao@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 14:32:45 by simao             #+#    #+#             */
-/*   Updated: 2023/04/28 15:11:12 by simao            ###   ########.fr       */
+/*   Updated: 2023/04/28 15:19:56 by simao            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,6 +84,13 @@ void	add_prime_sum(int n)
 int	main(int argc, char **argv)
 {
 	if (argc == 2)
+	{
 		add_prime_sum(ft_atoi(argv[1]));
-	write(1, "\n", 1);
+		write(1, "\n", 1);
+	}
+	else
+	{
+		write(1, "0", 1);
+		write(1, "\n", 1);
+	}
 }
