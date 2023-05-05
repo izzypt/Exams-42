@@ -2,6 +2,7 @@
 Solved exercises
 
 # Rank 0
+- rotone.c
 - ft_strlen
 - ft_swap
 - ft_strcpy
