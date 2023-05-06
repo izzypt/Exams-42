@@ -8,6 +8,7 @@ Solved exercises
 - ft_strcpy
 - first_word
 - search_and_replace
+- repeat_alpha
 
 # Rank 1
 - alpha_mirror
