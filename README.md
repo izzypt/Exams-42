@@ -9,6 +9,7 @@ Solved exercises
 - first_word
 - search_and_replace
 - repeat_alpha
+- rev_print
 
 # Rank 1
 - alpha_mirror
