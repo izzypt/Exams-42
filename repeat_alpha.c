@@ -1,46 +1,38 @@
-#include <stdio.h>
 #include <unistd.h>
 
-void repeat_alpha(char *str)
+void	repeat_alpha(char *str)
 {
-    int repeat;
+	int	i;
 
-    while (*str)
-    {
-        write(1, str, 1);
-        if (*str - 97 > 0 && *str >= 'a' && *str <= 'z')
-        {
-            repeat = *str - 97;
-            while (repeat)
-            {
-                write(1, str, 1);
-                repeat--;
-            }
-        }
-        if (*str - 65 > 0 && *str >= 'A' && *str <= 'Z')
-        {
-            repeat = *str - 65;
-            while (repeat)
-            {
-                write(1, str, 1);
-                repeat--;
-            }
-        }
-        str++;
-    }
+	i = 0;
+	while (*str)
+	{
+		if (*str >= 'a' && *str <= 'z')
+		{
+			i = 0;
+			while (i < *str - 'a')
+			{
+				write(1, str, 1);
+				i++;
+			}
+		}
+		if (*str >= 'A' && *str <= 'Z')
+		{
+			i = 0;
+			while (i < *str - 'A')
+			{
+				write(1, str, 1);
+				i++;
+			}
+		}
+		write(1, str, 1);
+		str++;
+	}
 }
 
-int main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
-    if (argc != 2)
-    {
-        write(1, "\n", 1);
-        return (0);
-    }
-    else
-    {
-        repeat_alpha(argv[1]);
-        write(1, "\n", 1);
-        return (0);
-    }
+	if (argc == 2)
+		repeat_alpha(argv[1]);
+	write(1, "\n", 1);
 }
