@@ -11,6 +11,7 @@ Solved exercises
 - repeat_alpha
 - rev_print
 - rot_13
+- ulstr
 
 # Rank 1
 - alpha_mirror
