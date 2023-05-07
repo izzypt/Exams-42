@@ -10,6 +10,7 @@ Solved exercises
 - search_and_replace
 - repeat_alpha
 - rev_print
+- rot_13
 
 # Rank 1
 - alpha_mirror
