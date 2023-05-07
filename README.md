@@ -19,6 +19,7 @@ Solved exercises
 - ft_strdup
 - inter.c
 - ft_atoi
+- ft_strcspn
 
 # Rank 2
 - ft_range
