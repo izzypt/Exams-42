@@ -26,6 +26,7 @@ Solved exercises
 - pgcd
 - print_hex
 - ft_list_size
+- ft_atoi_base
 
 # Rank 3
 - sort_list
