@@ -30,6 +30,7 @@ Solved exercises
 - ft_list_size
 - ft_atoi_base
 - paramsum
+- tab_mult
 
 # Rank 3
 - sort_list
