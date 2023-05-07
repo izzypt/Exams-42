@@ -20,6 +20,7 @@ Solved exercises
 - inter.c
 - ft_atoi
 - ft_strcspn
+- snake_to_camel
 
 # Rank 2
 - ft_range
