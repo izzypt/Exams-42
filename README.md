@@ -31,3 +31,4 @@ Solved exercises
 # Rank 3
 - sort_list
 - rev_wstr
+- fprime
