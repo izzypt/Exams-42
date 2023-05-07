@@ -34,3 +34,4 @@ Solved exercises
 - sort_list
 - rev_wstr
 - fprime
+- ft_itoa
