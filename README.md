@@ -28,6 +28,7 @@ Solved exercises
 - print_hex
 - ft_list_size
 - ft_atoi_base
+- paramsum
 
 # Rank 3
 - sort_list
