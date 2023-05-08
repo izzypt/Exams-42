@@ -23,6 +23,7 @@ Solved exercises
 - ft_atoi
 - ft_strcspn
 - snake_to_camel
+- max
 
 # Rank 2
 - ft_range
