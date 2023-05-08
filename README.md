@@ -37,3 +37,4 @@ Solved exercises
 - rev_wstr
 - fprime
 - ft_itoa
+- rostring
