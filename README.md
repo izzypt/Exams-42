@@ -31,6 +31,7 @@ Solved exercises
 - ft_atoi_base
 - paramsum
 - tab_mult
+- str_capitalizer
 
 # Rank 3
 - sort_list
