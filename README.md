@@ -33,6 +33,7 @@ Solved exercises
 - paramsum
 - tab_mult
 - str_capitalizer
+- rstr_capitalizer
 
 # Rank 3
 - sort_list
