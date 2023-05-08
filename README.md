@@ -12,6 +12,7 @@ Solved exercises
 - rev_print
 - rot_13
 - ulstr
+- ft_strcpy
 
 # Rank 1
 - alpha_mirror
