@@ -1,7 +1,9 @@
 # Exams-42
 Solved exercises
 
-# Rank 0
+# Rank 2
+
+### Level 0
 - rotone.c
 - ft_strlen
 - ft_swap
@@ -14,7 +16,7 @@ Solved exercises
 - ulstr
 - ft_strcpy
 
-# Rank 1
+### Level 1
 - alpha_mirror
 - is_power_of_2
 - swap_bits
@@ -25,7 +27,7 @@ Solved exercises
 - snake_to_camel
 - max
 
-# Rank 2
+### Level 2
 - ft_range
 - pgcd
 - print_hex
@@ -36,10 +38,16 @@ Solved exercises
 - str_capitalizer
 - rstr_capitalizer
 
-# Rank 3
+### Level 3
 - sort_list
 - rev_wstr
 - fprime
 - ft_itoa
 - rostring
 - flood_fill
+
+# Rank 2
+
+- Get_next_line
+
+- ft_printf
